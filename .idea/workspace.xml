@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a2b5570c-210b-4715-8b17-09dd4db91bb5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.4\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="28g22hpRCgn7vYlkNElOKOeiAX1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.bci.app.usecases" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.UsercreatorApplication">
+    <configuration name="UsercreatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.bci.app.UsercreatorApplication" />
+      <module name="UserCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bci.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserUseCaseTest.createUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bci.app.usecases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bci.app.usecases" />
+      <option name="MAIN_CLASS_NAME" value="org.bci.app.usecases.UserUseCaseTest" />
+      <option name="METHOD_NAME" value="createUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserUseCaseTest.thePasswordMustMachWithRegex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserCreator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bci.app.usecases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bci.app.usecases" />
+      <option name="MAIN_CLASS_NAME" value="org.bci.app.usecases.UserUseCaseTest" />
+      <option name="METHOD_NAME" value="thePasswordMustMachWithRegex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UsercreatorApplication" />
+        <item itemvalue="JUnit.UserUseCaseTest.thePasswordMustMachWithRegex" />
+        <item itemvalue="JUnit.UserUseCaseTest.createUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2b5570c-210b-4715-8b17-09dd4db91bb5" name="Default Changelist" comment="" />
+      <created>1651623705323</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651623705323</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="222" key="#com.intellij.ide.util.MemberChooser" timestamp="1651674129281">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="765" y="222" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651674129281" />
+    <state x="690" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1651680193968">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="690" y="263" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651680193968" />
+    <state x="715" y="219" key="#xdebugger.evaluate" timestamp="1651704537567">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="715" y="219" key="#xdebugger.evaluate/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651704537567" />
+    <state width="739" height="466" key="DebuggerActiveHint" timestamp="1651705425378">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="739" height="466" key="DebuggerActiveHint/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651705425378" />
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1651708880258">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651708880258" />
+    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1651708880257">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651708880257" />
+    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1651708880257">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651708880257" />
+    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1651708880257">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651708880257" />
+    <state width="1877" height="344" key="GridCell.Tab.1.bottom" timestamp="1651707102740">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651707102740" />
+    <state width="1877" height="344" key="GridCell.Tab.1.center" timestamp="1651707102740">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="344" key="GridCell.Tab.1.center/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651707102740" />
+    <state width="1877" height="344" key="GridCell.Tab.1.left" timestamp="1651707102740">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="344" key="GridCell.Tab.1.left/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651707102740" />
+    <state width="1877" height="344" key="GridCell.Tab.1.right" timestamp="1651707102740">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1877" height="344" key="GridCell.Tab.1.right/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651707102740" />
+    <state x="490" y="171" key="Maven.ArtifactSearchDialog" timestamp="1651678412470">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="490" y="171" key="Maven.ArtifactSearchDialog/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651678412470" />
+    <state x="740" y="292" width="440" height="485" key="RefactorJ.WrapReturnValue" timestamp="1651641305032">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="740" y="292" width="440" height="485" key="RefactorJ.WrapReturnValue/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651641305032" />
+    <state x="461" y="161" key="SettingsEditor" timestamp="1651678407912">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651678407912" />
+    <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1651634945003">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="968" height="524" key="XDebugger.FullValuePopup/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651634945003" />
+    <state x="731" y="326" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1651690794255">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="731" y="326" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651690794255" />
+    <state x="509" y="252" width="901" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1651625222175">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="509" y="252" width="901" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651625222175" />
+    <state x="667" y="204" width="585" height="624" key="find.popup" timestamp="1651641530689">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="667" y="204" width="585" height="624" key="find.popup/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651641530689" />
+    <state x="616" y="238" width="672" height="677" key="run.anything.popup" timestamp="1651706142048">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="616" y="238" width="672" height="677" key="run.anything.popup/0.0.1920.1032/1920.0.1920.1032@0.0.1920.1032" timestamp="1651706142048" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="javax.servlet.ServletException" package="javax.servlet" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/bci/app/domain/exceptions/ApiExceptionHandler.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/bci/app/domain/exceptions/ApiExceptionHandler.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/bci/app/usecases/UserUseCase.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/bci/app/usecases/UserUseCase.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/bci/app/usecases/UserUseCase.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/bci/app/domain/mappers/UserMapper.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/bci/app/infraestructure/web/controllers/UserController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
