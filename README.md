@@ -7,7 +7,7 @@ El presente proyecto tiene como proposito demostrar las distintas competencias o
 # Instalación y ejecución
 ********************************************************************* 
 
-NOTA : Como prerequisitos asegurese  tener instalado maven en su equipo local, acá un manual -> https://maven.apache.org/install.html
+NOTA : Como pr-requisitos asegúrese  tener instalado maven en su equipo local, acá un manual -> https://maven.apache.org/install.html
 
 1. clonar proyecto
     
@@ -15,16 +15,16 @@ NOTA : Como prerequisitos asegurese  tener instalado maven en su equipo local, a
     
     cd user-creator-test
 
-2. ejecutar la siguiente linea de comando:
+2. ejecutar la siguiente línea de comando:
     
     mvn spring-boot:run
    
-3. abra un navegador pege y visite el siguiente link
+3. abra un navegador visite el siguiente link
    http://localhost:8080/swagger-ui/#/user-controller/createUserUsingPOST
    
    NOTA: Cuando agregue el usuario la expresión regular que actualmente se ha dejado es la siguiente: "grupos de letras de la a-z minusculas".
    por ejemplo, si intenta crear el usuario con un password de valor "haunter2" recibiara un json con el mansaje que el campo password no respeta la expresión,
-   ingrese las varionaciones para obtener los distintos resultados.
+   ingrese las variaciones para obtener los distintos resultados.
 
 4.- Tras operaciones de inserción puede verificar los registros en el panel de administración de H2 en el siguiente link:
       
@@ -40,13 +40,13 @@ NOTA : Como prerequisitos asegurese  tener instalado maven en su equipo local, a
       Password: sa
     
 
-  # Notas sobre la soluición
+  # Notas sobre la solución
   Como arquitectura se implementa una de tipo exagonal que permite
-  la escalabilidad de la solucón separados principalmente por infraestructura
-  dominio y casos de usos para el negocio. Tambien importante destacar que
-  he escogido la inyeción de dependencia mediante configuraciones declarando beans
+  la escalabilidad de la solución separados principalmente por infraestructura
+  dominio y casos de usos para el negocio. También importante destacar que
+  he escogido la inyección de dependencia mediante configuraciones declarando beans
   esto debido a que es mucho mas practico a la hora de hacer Mocking en pruebas unitarias
-  y de integración, velando a su vez por la atomicidad de los estados en instancias (singleton)
+  y de integración, velando a su vez por la "atomicidad" de los estados en instancias (singleton)
   
 
 
@@ -61,7 +61,7 @@ error.
 1 .- Todos los mensajes deben seguir el formato: {"mensaje": "mensaje de error"}
 
 > Se resuelve mediante ErrorHandler, sumado a excepciones custom que permiten dar una visibilidad mas objetiva de los errores, destacar que como log solo se ha dejado
-> a nivel de prfundidad de info, puesto siguiendo buenas practicas que determinan que no es bueno logear y capturar exepciones (es una u otra).
+> a escala de profundidad de info, puesto siguiendo buenas practicas que determinan que no es bueno "logear" y capturar excepciones (es una u otra).
 > (https://www.javacodegeeks.com/10-best-practices-to-handle-java-exceptions.html)
 
 2 .- Ese endpoint deberá recibir un usuario con los campos "nombre", "correo", "contraseña", más un listado de objetos "teléfono", respetando el siguiente formato:
@@ -82,21 +82,21 @@ error.
       * token: token de acceso de la API (puede ser UUID o JWT)
       * isactive: Indica si el usuario sigue habilitado dentro del sistema.
   
-  > Exactamente como se solicita, mediante de la ultilidad de Java se genera el UUID para persistir el Id del Usuario, no asi para Id de phone que ha sido Identity 
+  > Exactamente como se solicita, mediante de la utilidad de Java se genera el UUID para persistir el Id del Usuario, no así para Id de phone, que ha sido Identity. 
 
 5 .- Si caso el correo conste en la base de datos, deberá retornar un error "El correo ya registrado".
 
-  > Mediante a la implementacion prpuesta por JPARepository y su JPQL se agrega metodo findByEmail que permite la obtención de el usuario y determinar lanzar una UserException (mis disculpas por el nombre)
+  > Mediante a la implementación propuesta por JPARepository y su JPQL se agrega método findByEmail que permite la obtención de el usuario y determinar lanzar una UserException (mis disculpas por el nombre) o no.
 
 6 .- El correo debe seguir una expresión regular para validar que formato sea el correcto. (aaaaaaa@dominio.cl)
 
-  > Mediante @Valid (javax.validation) se validan campos de forma mas optima como por ejempo @NotBlank o @Pattern que permite el ingreso de una expresión regular para el match
-  > Estos errores tambien han sido registrados en el error handler (MethodArgumentNotValidException) y ademas han sido formatedos para respetar la convención de error propuesta en el inicio.
+  > Mediante @Valid (javax.validation) se validan campos de forma más optima como por ejemplo @NotBlank o @Pattern que permite el ingreso de una expresión regular para el match
+  > Estos errores también han sido registrados en el error handler (MethodArgumentNotValidException) y además han sido formateados para respetar la convención de error propuesta en el inicio.
 
 7 .- La clave debe seguir una expresión regular para validar que formato sea el correcto. (El valor de la expresión regular debe ser configurable)
   
-  > Para la clave se ha dejado directamente en el controlador un simple Patern.match para agregar patron mediante un objeto Environment que permite la obtencion de valores
-  > registrado en el application.properties, aclarar que no se puede utilizar la misma tecnica de @Patern de java.validation puesto su notación solo permite valores constantes 
+  > Para la clave se ha dejado directamente en el controlador un simple Pattern.match para agregar patron mediante un objeto Environment que permite la obtención de valores
+  > registrados en el application.properties, aclarar que no se puede utilizar la misma técnica de @Pattern de java.validation puesto su notación solo permite valores constantes 
 
 8 .- El token deberá ser persistido junto con el usuario
   > Para el token se utiliza JWT con algoritmo de ES512
@@ -107,7 +107,7 @@ Banco de datos en memoria. Ejemplo: HSQLDB o H2.
 
 Proceso de build vía Gradle o Maven.
   
-  > Se utiiliza Maven (lo conozco mas, pero tambien he trabajado con Gradle)
+  > Se utiliza Maven (lo conozco más, pero también he trabajado con Gradle)
 
 Persistencia con JPA. Ejemplo: EclipseLink, Hibernate u OpenJPA.
   
@@ -132,4 +132,4 @@ JWT como token
 Pruebas unitarias
   > Mockito para pruebas de controlador y unitaria
 Swagger
-  > Swagger para documentacion y pruebas de inserción
+  > Swagger para documentación y pruebas de inserción
