@@ -125,11 +125,18 @@ Entrega en un repositorio público (github o bitbucket) con el código fuente y 
   
   > Durante el levantamiento se genera la base, no es necesario script
 
-Diagrama de la solución.
-
 JWT como token
   > Se implementa JWT
 Pruebas unitarias
   > Mockito para pruebas de controlador y unitaria
 Swagger
   > Swagger para documentación y pruebas de inserción
+
+# Diagrama de la solución
+Entidades
+
+![github-small](../BCITest/src/main/resources/images/entitydiagram.png)
+
+Uml (adjunto archivo en resources/images)
+
+![github-small](../BCITest/src/main/resources/images/uml2.png)
