@@ -135,8 +135,8 @@ Swagger
 # Diagrama de la solución
 Entidades
 
-![github-small](../BCITest/src/main/resources/images/entitydiagram.png)
+![github-small](https://github.com/sinfonico7/user-creator-test/blob/main/src/main/resources/images/entitydiagram.png)
 
 Uml (adjunto archivo en resources/images)
 
-![github-small](../BCITest/src/main/resources/images/uml2.png)
+![github-small](https://github.com/sinfonico7/user-creator-test/blob/main/src/main/resources/images/uml2.png)
