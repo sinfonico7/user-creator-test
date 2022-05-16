@@ -14,8 +14,10 @@ public class UserCreationDTO {
 
     @NotBlank
     private String name;
+    @NotBlank
     @Pattern(regexp = "[a-z0-9]+@[a-z]+\\.[a-z]{2,3}")
     private String email;
+    @NotBlank
     private String password;
     private List<PhoneDTO> phones;
 
@@ -26,5 +28,9 @@ public class UserCreationDTO {
                 ", email='" + email + '\'' +
                 ", phones=" + phones +
                 '}';
+    }
+
+    public boolean hasPhones(){
+        return phones != null;
     }
 }

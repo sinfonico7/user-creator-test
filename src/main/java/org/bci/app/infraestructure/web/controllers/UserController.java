@@ -26,16 +26,13 @@ public class UserController {
 
     @PostMapping(consumes = "application/json",produces = "application/json")
     public ResponseEntity<UserDTO> createUser(@Valid @RequestBody UserCreationDTO user){
+
         String regex = environment.getProperty("validator.password.regex");
+
         log.info("[CREATE USER] Creating a user (we hide the pass): {}",user.toString());
+
         if (!Pattern.matches(regex, user.getPassword())) throw new ValidatorException(String.format("Password doesn't match with regex (%s) ", regex), HttpStatus.BAD_REQUEST);
 
-        UserDTO userDTO = null;
-        try {
-            userDTO = userUseCase.createUser(user);
-        } catch (UserException e){
-            throw new UserException(e.getMessage(), e.getStatus());
-        }
-        return new ResponseEntity<>(userDTO, HttpStatus.CREATED);
+        return new ResponseEntity<>(userUseCase.createUser(user), HttpStatus.CREATED);
     }
 }

@@ -49,10 +49,13 @@ public class UserUseCase implements IUserRepository {
         newUser.setModified(now);
         newUser.setId(id);
         newUser.setIsActive(true);
-        List<Phone> phones = to(userCreationDTO.getPhones(),newUser);
+        if(userCreationDTO.hasPhones()){
+            List<Phone> phones = to(userCreationDTO.getPhones(),newUser);
+            newUser.setPhones(phones);
+        }
         String token = tokenService.generateTokenFromUser(newUser,id);
         newUser.setToken(token);
-        newUser.setPhones(phones);
+
         return newUser;
     }
 

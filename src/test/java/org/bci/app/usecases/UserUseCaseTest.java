@@ -27,6 +27,7 @@ class UserUseCaseTest {
     IUserJPARepository jpaRepository;
     TokenUtils tokenUtils;
     User user;
+    User userWithoutPhones;
     UserCreationDTO userCreationDTO;
 
     @BeforeEach
@@ -35,8 +36,8 @@ class UserUseCaseTest {
         tokenUtils = mock(TokenUtils.class);
         jpaRepository = mock(IUserJPARepository.class);
         userUseCase = new UserUseCase(jpaRepository,tokenUtils);
-        user = builMockUser();
-
+        user = buildMockUserWithPhones();
+        userWithoutPhones = buildMockUserWithoutPhones();
         userCreationDTO = buildUserCreatio();
     }
 
@@ -49,7 +50,7 @@ class UserUseCaseTest {
                 .build();
     }
 
-    private User builMockUser() {
+    private User buildMockUserWithPhones() {
 
         List<Phone> phones = Arrays.asList(Phone.builder().cityCode("1").countryCode("57").number("1234567").build());
         return User.builder()
@@ -62,6 +63,20 @@ class UserUseCaseTest {
                 .isActive(true)
                 .token("el.super.token")
                 .phones(phones)
+                .build();
+    }
+
+    private User buildMockUserWithoutPhones() {
+
+        return User.builder()
+                .email("juan@rodriguez.org")
+                .password("hunter2")
+                .created(now)
+                .lastLogin(now)
+                .modified(now)
+                .id(ID)
+                .isActive(true)
+                .token("el.super.token")
                 .build();
     }
 
@@ -81,5 +96,14 @@ class UserUseCaseTest {
         when(environment.getProperty("validator.password.regex")).thenReturn("[a-z]*");
         String badPassword = "lettersandnumbers293497328749";
         assertThrows(ValidatorException.class, () -> userController.createUser(UserCreationDTO.builder().password(badPassword).build()));
+    }
+
+    @Test
+    void whenCreteAUserWithoutPhonesItShouldNotFail(){
+        when(jpaRepository.findByEmail("juan@rofriguez.cl")).thenReturn(null);
+        when(tokenUtils.generateTokenFromUser(any(User.class),anyString())).thenReturn("el.super.token");
+        when(jpaRepository.save(any(User.class))).thenReturn(userWithoutPhones);
+        UserDTO response = UserDTO.builder().created(now).id(ID).isActive(true).lastLogin(now).token("el.super.token").modifed(now).build();
+        assertEquals(response,userUseCase.createUser(userCreationDTO));
     }
 }
