@@ -39,6 +39,9 @@ NOTA : Como pr-requisitos asegúrese  tener instalado maven en su equipo local, 
       User Name: banco
       Password: sa
     
+AVISO: Se agrega funcionalidad con docker, puede descargar la imagen de la siguiente forma:
+
+     docker pull finostroza/user-creator-docker:v1.0.0
 
   # Notas sobre la solución
   Como arquitectura se implementa una de tipo exagonal que permite
