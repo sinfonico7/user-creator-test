@@ -3,6 +3,11 @@ Servicio de creación de usuarios
 
 El presente proyecto tiene como proposito demostrar las distintas competencias orientadas a servicios RestFul bajo tecnoligia JAVA y su framwork de inyección de dependencias SPring Boot.
 
+# Como construir el project usando Docker
+
+docker build -t ${project_name} .
+docker run -it -p 8080:8080 ${project_name}
+
 *********************************************************************
 # Instalación y ejecución
 ********************************************************************* 
