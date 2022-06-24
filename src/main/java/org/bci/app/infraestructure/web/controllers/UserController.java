@@ -6,6 +6,7 @@ import org.bci.app.domain.dto.UserCreationDTO;
 import org.bci.app.domain.dto.UserDTO;
 import org.bci.app.domain.exceptions.UserException;
 import org.bci.app.domain.exceptions.ValidatorException;
+import org.bci.app.infraestructure.repositories.IUserService;
 import org.bci.app.usecases.UserUseCase;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
@@ -22,7 +23,7 @@ public class UserController {
 
     private final Environment environment;
 
-    private final UserUseCase userUseCase;
+    private final IUserService userUseCase;
 
     @PostMapping(consumes = "application/json",produces = "application/json")
     public ResponseEntity<UserDTO> createUser(@Valid @RequestBody UserCreationDTO user){
